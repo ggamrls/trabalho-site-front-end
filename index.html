@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeff Buckley | Biografia</title>
+    <style>
+       
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background-color: #f7f5f0; 
+            color: #3a3530; 
+            line-height: 1.6;
+        }
+        a {
+            color: #8c6d4f; 
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        a:hover {
+            color: #2b2520;
+        }
+
+      
+        header {
+            background-color: #eae5da; 
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid #ded6c5;
+            background-image: url(_.jpeg);
+        }
+        nav {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+        nav h1 {
+            font-size: 24px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: #2b2520;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: bold;
+            color: #5c5246;
+        }
+        nav ul li a:hover {
+            color: #2b2520;
+        }
+
+        .hero {
+            height: 50vh;
+            background-color: #e4ded0; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-top: 70px;
+            border-bottom: 1px solid #ded6c5;
+            background-image: url(_.jpeg);
+        }
+        .hero-content h2 {
+            font-size: 48px;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            color: #2b2520;
+            margin-bottom: 10px;
+        }
+        .hero-content p {
+            font-style: italic;
+            color: #8c6d4f;
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+        section {
+            margin-bottom: 60px;
+            border-bottom: 1px solid #ded6c5;
+            padding-bottom: 60px;
+        }
+        section:last-child {
+            border-bottom: none;
+        }
+        h2.section-title {
+            font-size: 28px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+            color: #2b2520;
+            border-left: 4px solid #8c6d4f;
+            padding-left: 15px;
+        }
+
+   
+        .bio-content {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .bio-text {
+            flex: 1;
+            min-width: 300px;
+        }
+        .bio-text p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        .bio-img {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
+        }
+        .bio-img img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            border: 1px solid #ded6c5;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+        .card {
+            background-color: #fff; 
+            border: 1px solid #ded6c5;
+            border-radius: 4px;
+            overflow: hidden;
+            transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #8c6d4f;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+        }
+        .card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            background-color: #eae5da;
+        }
+        .card-body {
+            padding: 20px;
+        }
+        .card-body h3 {
+            font-size: 18px;
+            color: #2b2520;
+            margin-bottom: 5px;
+        }
+        .card-body span {
+            font-size: 14px;
+            color: #8c6d4f;
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .card-body p {
+            font-size: 14px;
+            color: #5c5246;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+        .gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 4px;
+            border: 1px solid #ded6c5;
+            background-color: #eae5da;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+        .gallery img:hover {
+            transform: scale(1.03);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        
+        footer {
+            background-color: #eae5da;
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 14px;
+            color: #7a6f62;
+            border-top: 1px solid #ded6c5;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .hero-content h2 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+ 
+    <header>
+        <nav>
+            <h1>Jeff Buckley</h1>
+            <ul>
+                <li><a href="#biografia">Biografia</a></li>
+                <li><a href="#albuns">Álbuns</a></li>
+                <li><a href="#filmes">Filmes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+ 
+    <div class="hero">
+        <div class="hero-content">
+            <h2>The Eternal Voice</h2>
+            <p>"Sua música era um mistério que tocava a alma."</p>
+        </div>
+    </div>
+
+    <div class="container">
+
+    
+        <section id="biografia">
+            <h2 class="section-title">Biografia</h2>
+            <div class="bio-content">
+                <div class="bio-text">
+                    <p><strong>Jeffrey Scott Buckley</strong> (1966 – 1997) foi um aclamado cantor, compositor e guitarrista norte-americano. Dono de uma das vozes mais marcantes e acrobáticas da história do rock alternativo, Jeff herdou o DNA musical de seu pai, o também cantor Tim Buckley, embora quase não tenham convivido.</p>
+                    <p>Após anos atuando como guitarrista de estúdio em Los Angeles, ele conquistou Nova York no início dos anos 90 com apresentações intimistas no lendário café <em>Sin-é</em>, no East Village. Sua musicalidade única misturava influências que iam do rock clássico como Led Zeppelin ao jazz, folk e blues.</p>
+                    <p>Infelizmente, sua brilhante trajetória foi interrompida de forma trágica e precoce aos 30 anos de idade, quando faleceu por afogamento acidental nas águas do Rio Wolf, afluente do Mississippi, em maio de 1997.</p>
+                    <p></p>
+                </div>
+                <div class="bio-img">
+                    <img src="Jeff Buckley __.jpeg" alt="Jeff Buckley">
+                </div>
+            </div>
+        </section>
+
+      
+        <section id="albuns">
+            <h2 class="section-title">Discografia Essencial</h2>
+            <div class="grid">
+        
+                <div class="card">
+                    <img src="Grace par Jeff Buckley sur Apple Music.jpeg" alt="Capa do álbum Grace">
+                    <div class="card-body">
+                        <h3>Grace</h3>
+                        <span>1994 &bull; Álbum de Estúdio</span>
+                        <p>O único álbum de estúdio completo lançado em vida. Uma obra-prima atemporal que inclui clássicos absolutos como "Last Goodbye", "Lover, You Should've Come Over" e a sua lendária e definitiva versão de "Hallelujah" de Leonard Cohen.</p>
+                    </div>
+                </div>
+              
+                <div class="card">
+                    <img src="Sketches for My Sweetheart The Drunk.jpeg" alt="Capa do álbum Sketches">
+                    <div class="card-body">
+                        <h3>Sketches for My Sweetheart the Drunk</h3>
+                        <span>1998 &bull; Póstumo</span>
+                        <p>Uma compilação de demos gravadas em quatro canais e sessões de estúdio inacabadas que Jeff estava preparando para o seu segundo álbum antes de sua partida repentina.</p>
+                    </div>
+                </div>
+           
+                <div class="card">
+                    <img src="Jeff_sine.png" alt="Capa do álbum Live at Sin-é">
+                    <div class="card-body">
+                        <h3>Live at Sin-é</h3>
+                        <span>1993 &bull; EP Original</span>
+                        <p>O álbum Live at Sin-é, lançado originalmente em 1993 como um EP e posteriormente expandido em 2003 na sua "Legacy Edition", registra o início da carreira comercial de Jeff Buckley. </p>
+                    </div>
+                </div>
+           
